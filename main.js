@@ -1,14 +1,13 @@
 //音乐设置
-let music_id = "1413325844";
-let music_name = "Black Catcher";
-let music_artist = "ビッケブランカ";
+let music_id = "1808492017";
+let music_name = "错位时空";
+let music_artist = "艾辰";
 
 
 let apname = music_name;
 let apart = music_artist;
-let apurl = 'https://v1.itooi.cn/netease/url?id=' + music_id + '&quality=flac';
-let apcover = 'https://v1.itooi.cn/netease/pic?id=' + music_id;
-let aplrc = 'https://v1.itooi.cn/netease/lrc?id=' + music_id;
+let apurl = 'https://music.163.com/song/media/outer/url?id=' + music_id;
+let apcover = 'https://p1.music.126.net/8C0lwLE88j9ZwLyPQ9a4FA==/109951165595770076.jpg?param=130y130;
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
@@ -16,9 +15,7 @@ const ap = new APlayer({
         name: apname,
         artist: apart,
         url: apurl,
-        cover: apcover,
-        lrc: aplrc
-
+        cover: apcover
     }],
     autoplay: true
 });
